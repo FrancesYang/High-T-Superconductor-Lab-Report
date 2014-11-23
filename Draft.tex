@@ -57,7 +57,8 @@ This phenomenon can be used to make levitation trains.  Superconductors are also
 
 Superconductivity has been found to occur in elements, alloys, binary compounds, and other materials.  
 Roughly 70 years after superconductivity was discovered, ceramic materials with critical temperatures above the liquid nitrogen temperature of 77 K were found.\cite{melissinos} 
-These ``high temperature'' superconductors were made up of alternating layers of rare earth atoms and copper and oxygen atoms.\cite{kumar} In our experiment, we look at two high temperature superconductors, $\textrm{Yt}_{?}\textrm{Ba}_{?}\textrm{Cu}_{?}\textrm{O}_{?}$ and $\textrm{Bi}_{?}\textrm{Sr}_{?}\textrm{Ca}_{?}\textrm{Cu}_{?}\textrm{O}_{?}$. 
+These ``high temperature'' superconductors were made up of alternating layers of rare earth atoms and copper and oxygen atoms.\cite{kumar} 
+In our experiment, we look at two high temperature superconductors, $\textrm{Yt}\textrm{Ba}_{2}\textrm{Cu}_{3}\textrm{O}_{7-\delta}$ and $\textrm{Bi}_{2}\textrm{Sr}_{2}\textrm{Ca}_{n-1}\textrm{Cu}_{n}\textrm{O}_{9}$. %n=3 mainly for colorado superconductor 110 Tc
  
 
  
@@ -77,9 +78,11 @@ The voltage across the YBCO sample, $V_{\textrm{YBCO}}$, and the voltage across 
 The sand reduces the rate at which the superconductor heats up, which allows us to gather more data points. 
 We cooled the YBCO sample by pouring liquid nitrogen into the styrofoam cup. We waited for the superconductor to settle to a minimum temperature. Then we recorded $V_{\textrm{YBCO}}$ and $V_{T}$ as it warmed up to above its critical temperature. 
 
-We used a two-phase lock-in amplifier for the BSCCO experiment. This allows us to separate the resistance from any contributions from induction or capacitance.
-The BSCCO sample was connected in series with a 1 k$\Ohm$ resistor. This circuit was connected to a sinusoidal? voltage source with a RMS of 1 V. 
-Since the resistance of the BSCCO compared to the resistor is much smaller, even at room temperature, the current going through the circuit is approximately $\pm$1 mA. 
+We used a two-phase lock-in amplifier for the BSCCO experiment. In an AC circuit, the measurement of resistance includes contributions from capacitors and inductors. 
+Although there are no explicit capacitors or inductors in our circuit, they are effectively present due to the electrical cables used. 
+The lock-in amplifier allows us to extract the resistance of superconductor from the other contributions because the resistance will be in phase with the signal, while the contributions of capacitors and inductors will be out of phase. 
+Since the resistance of the BSCCO at room temperature is on the order of m$\Omega$s, we can get approximately $\pm$1 mA in the circuit by connecting the BSCCO in series with a 1 k$\Omega$ resistor, and with a AC voltage source of 1 V. 
+
 
 
 \section{Results and Analysis}
