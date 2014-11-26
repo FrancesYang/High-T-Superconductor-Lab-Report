@@ -17,8 +17,8 @@
 \title{Critical Temperature of YBCO and BSCCO Superconductors}
 % In a long title you can use \\ to force a line break at a certain location.
 
-\author{}
-\affiliation{}
+\author{Ed Lipchus}
+\affiliation{Hampshire College, Amherst, MA 01002}
 
 % optional second address
 % If there were a second author at the same address, we would put another 
@@ -84,10 +84,50 @@ Since the resistance of the BSCCO at room temperature is on the order of m$\Omeg
 
 \section{Results and Analysis}
 
-\section{Discussion}
+First, to convert our thermocouple voltage into a usable temperature, we transcribed the chart provided in the Teachspin manual that came with the YBCO and BSCCO samples and and plotted temperature vs voltage (see Fig. \ref{TCplot}). While it was best fit piecemeal, a single curve was able to cover our temperature range, and we used that function to convert our thermocouple voltages in later fits.
+
+\begin{figure}[width=5in][h!]
+\centering
+\includegraphics{thermocouple_voltage_vs_temp.png}
+\caption{Figure 1: Plot of Temperature and thermocouple voltage transcribed from the Teachspin manual, with fit lines across different sections.}
+\label{TCplot}
+\end{figure}
+
+We gathered data across two warm-ups of the YBCO sample, the first at equal time intervals between points (see Fig. \ref{YBCOplot1}) and the second focusing on taking more points during the transition period than elsewhere (see Fig. \ref{YBCOplot2}). In order to determine the critical temperature, we found the point along the transition period that was exactly in between the trend line for resistance during non-superconductivity and the trend line for resistance during superconductivity, and noted the corresponding temperature. The error in our voltage readings was very low (on the order of 0.000005mV), so the larger element of error is looking at the width of the transition zone, which was defined between the first points to clearly deviate from the trend lines. This yielded results of a $T_C$ of 98.03K and 98.67K per trial, with a range of 91K to 100K and 94K to 101K, respectively.
+
+\begin{figure}[width=5in][h!]
+\centering
+\includegraphics{ybco_sand_warmup_116_resistance_vs_temp.png}
+\caption{Plot of resistance vs temperature for YBCO sample, with best fit lines during normal conductivity and during superconductivity, with a third line showing the space equidistant between. Data was gathered every 20 seconds during warm-up.}
+\label{YBCOplot1}
+\end{figure}
+
+\begin{figure}[width=5in][h!]
+\centering
+\includegraphics{ybco_sand_warmup_1111_resistance_vs_temp.png}
+\caption{Plot of resistance vs temperature for YBCO sample, with best fit lines during normal conductivity and during superconductivity, with a third line showing the space equidistant between. Data was gathered every 30 seconds until onset of superconductivity, then every couple seconds throughout the transition period.}
+\label{YBCOplot2}
+\end{figure}
+
+Next we looked at a sample of BSCCO gathered through the two-phase lock-in amplifier. Only one trial was performed, though data was gathered every 3 seconds for 3 hours. Once the data was plotted, the same procedure was used as with the YBCO sample to determine the critical temperature (see Fig. \ref{BSCCOplot1}). The critical temperature $T_C$ here was 110K, with a range of 101K to 119K. Of particular interest was the trend during the early pre-superconducting period. While certainly not truly ceasing to superconduct, there appeared to be some jumps in resistance during the superconductive phase, shown closely in Fig. \ref{BSCCOplot2}. On closer inspection, while there is clearly some upward trend and movement not seen in the YBCO sample, it is not clear enough to pinpoint any specific jumps.
+
+\begin{figure}[width=10mm][h!]
+\centering
+\includegraphics{bscco_resistance_vs_temperature.png}
+\caption{Plot of resistance vs temperature for BSCCO sample, with best fit lines during normal conductivity and during superconductivity, with a third line showing the space equidistant between.}
+\label{BSCCOplot1}
+\end{figure}
+
+\begin{figure}[width=3in][h!]
+\centering
+\includegraphics{bscco_superconductivity_close-up.png}
+\caption{Close up of the BSCCO sample warm-up during it superconductive phase. Irregularities are definitely present, but jumps are not clear.}
+\label{BSCCOplot2}
+\end{figure}
 
 \section{Conclusion}
 
+Superconductivity was clearly achieved in both the YBCO and the BSCCO samples, and their transition to being non-superconductive as their temperature increased was recorded. Graphical analysis yielded a critical temperature for YBCO of 98.35K $pm$ 7K and for BSCCO of 110K $pm$ 9K. According to the Teachspin manual, YBCO has a critical temperature of 92K, which is within our margin of error; similarly, the BSCCO sample was noted as having a critical temperature of 105K, again within our margin of error. The strange behavior seen during the end of the superconducting phase of the BSCCO sample may also have had to do with the fact that BSCCO can have two other critical temperatures. The general formula is $\textrm{Bi}_{2,1}\textrm{Sr}_{n+1}\textrm{Ca}_{\textrm{n}-1}\textrm{Cu}_{\textrm{n}}\textrm{O}_{2n+4+\delta}$. While the sample we had was specified for $n=3$, it is quite possible that other variations were present in our sample, each with their own critical temperature: $T_C$ for $n=1$ is 80K and $T_C$ for $n=2$ is 90K. While we did not get as cold as 80K, we could be seeing some sections stop superconducting around 90K, alongside the already non-superconducting $n=1$ material, giving us a not truly flat superconducting zone.
 
 
 \begin{thebibliography}{99}
