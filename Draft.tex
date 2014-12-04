@@ -50,7 +50,7 @@ Superconductors are materials that lose their electrical resistance  when they f
 
 \section{Introduction} % Section titles are automatically converted to all-caps.
 % Section numbering is automatic.
-In 1911, Kamerlingh Onnes discovered superconductivity in mercury.  
+\textcolor{blue}{generally OK, but the primary application of SC these days is actually to make high field magnets from superconducting wire, typically up to 18 or 20 tesla. This would be more relevant than levitating trains, which don't yet exist in commerical operation.} In 1911, Kamerlingh Onnes discovered superconductivity in mercury.  
 Instead of a gradual decrease in the electrical resistance as the temperature decreased, he found a sudden loss of resistance when the temperature went below 4.2 K. 
 The temperature at which the resistance disappears is called the critical temperature.
 In addition to having no resistance, superconductors also exhibit perfect diamagnetism, which means they exclude all magnetic field flux from their interior. 
@@ -62,7 +62,7 @@ Superconductivity has been found to occur in elements, alloys, binary compounds,
 Roughly 70 years after superconductivity was discovered, ceramic materials with critical temperatures above the liquid nitrogen temperature of 77 K were found.\cite{melissinos} 
 These ``high temperature'' superconductors were made up of alternating layers of rare earth atoms and copper and oxygen atoms.\cite{kumar} 
 In our experiment, we look at two high temperature superconductors, $\textrm{Yt}\textrm{Ba}_{2}\textrm{Cu}_{3}\textrm{O}_{7-\delta}$ and $\textrm{Bi}_{2}\textrm{Sr}_{2}\textrm{Ca}_{\textrm{n}-1}\textrm{Cu}_{\textrm{n}}\textrm{O}_{9}$, where $\textrm{n}=1,2,\textrm{ or},3$. %n=3 mainly for colorado superconductor 110 Tc
-The amount of oxygen in $\textrm{Yt}\textrm{Ba}_{2}\textrm{Cu}_{3}\textrm{O}_{7-\delta}$ determines if the material will be superconducting. For $\textrm{Bi}_{2}\textrm{Sr}_{2}\textrm{Ca}_{\textrm{n}-1}\textrm{Cu}_{\textrm{n}}\textrm{O}_{9}$, the critical temperature \textcolor{red}{is depends} on the value of n.
+The amount of oxygen in $\textrm{Yt}\textrm{Ba}_{2}\textrm{Cu}_{3}\textrm{O}_{7-\delta}$ determines if the material will be superconducting. For $\textrm{Bi}_{2}\textrm{Sr}_{2}\textrm{Ca}_{\textrm{n}-1}\textrm{Cu}_{\textrm{n}}\textrm{O}_{9}$, the critical temperature \textcolor{red}{is depends} on the value of n. \textcolor{magenta}{and these values are ?, according to ? source}. 
 
  
 \section{Aims}
@@ -78,7 +78,9 @@ One pair was for attaching to the current source, another pair was used to measu
 
 We used different methods to measure the critical temperature of the two superconductors.
 For the YBCO, we connected it to a source with an alternating current of $\pm$1 mA. 
-The voltage across the YBCO sample, $V_{\textrm{YBCO}}$, and the voltage across the thermocouple \textcolor{magenta}{junction}, $V_{T}$ were measured with two nanovoltmeters. \textcolor{blue}{you should explain the point of reversing the current and how this helps more accurately determine the true }$\Delta V$ \textcolor{blue}{ across the sample. You should also explain how you go from voltage drop to resistance, even though it is a simple calculation, or that the instrument does that for you. Finally, didn't you do some measurements at other values of current?} 
+The voltage across the YBCO sample, $V_{\textrm{YBCO}}$, and the voltage across the thermocouple \textcolor{magenta}{junction}, $V_{T}$ were measured with two nanovoltmeters. \textcolor{blue}{you should explain the point of reversing the current and how this helps more accurately determine the true }$\Delta V$ \textcolor{blue}{ across the sample. You should also explain how you go from voltage drop to resistance, even though it is a simple calculation, or that the instrument does that for you. Include circuit diagrams.} 
+
+\textcolor{red}{Finally, didn't you do some measurements at other values of current? for example, 10 mA and 100 mA, in addition to 1 mA? YOu were supposed to, and I thought you had. I can't find those results anywhere in your paper. } 
 
 We placed the superconductor inside a styrofoam cup filled with sand. 
 The sand reduces the rate at which the superconductor heats up, which allows us to gather more data points. 
@@ -144,6 +146,8 @@ Next we looked at a sample of BSCCO gathered through the two-phase lock-in ampli
 \section{Conclusion}
 
 Superconductivity was clearly achieved in both the YBCO and the BSCCO samples, and their transition to being non-superconductive as their temperature increased was recorded. Graphical analysis yielded a critical temperature for YBCO of \textcolor{red}{fix this:} 98.35K $pm$ 7K and for BSCCO of 110K $pm$ 9K. According to the \textcolor{red}{Teachspin} manual, YBCO has a critical temperature of 92K, which is within our margin of error; similarly, the BSCCO sample was noted as having a critical temperature of 105K, again within our margin of error. The strange behavior seen during the end of the superconducting phase of the BSCCO sample may also have had to do with the fact that BSCCO can have two other critical temperatures. The general formula is $\textrm{Bi}_{2,1}\textrm{Sr}_{n+1}\textrm{Ca}_{\textrm{n}-1}\textrm{Cu}_{\textrm{n}}\textrm{O}_{2n+4+\delta}$. While the sample we had was specified for $n=3$, it is quite possible that other variations were present in our sample, each with their own critical temperature: $T_C$ for $n=1$ is 80K and $T_C$ for $n=2$ is 90K. \textcolor{blue}{what is your source for this information about Tc values for n  = 1, 2, and 3?} While we did not get as cold as 80K, we could be seeing some sections stop superconducting around 90K, alongside the already non-superconducting $n=1$ material, giving us a not truly flat superconducting zone.
+
+\textcolor{red}{citations should include the ``teachspin'' manual (or the manual you really used) in addition to the 3 listed below. }
 
 
 \begin{thebibliography}{99}
