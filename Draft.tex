@@ -50,19 +50,20 @@ Superconductors are materials that lose their electrical resistance  when they f
 
 \section{Introduction} % Section titles are automatically converted to all-caps.
 % Section numbering is automatic.
-\textcolor{blue}{generally OK, but the primary application of SC these days is actually to make high field magnets from superconducting wire, typically up to 18 or 20 tesla. This would be more relevant than levitating trains, which don't yet exist in commerical operation.} In 1911, Kamerlingh Onnes discovered superconductivity in mercury.  
+In 1911, Kamerlingh Onnes discovered superconductivity in mercury.  
 Instead of a gradual decrease in the electrical resistance as the temperature decreased, he found a sudden loss of resistance when the temperature went below 4.2 K. 
 The temperature at which the resistance disappears is called the critical temperature.
 In addition to having no resistance, superconductors also exhibit perfect diamagnetism, which means they exclude all magnetic field flux from their interior. 
 This property, called the Meissner effect, was discovered in 1933.\cite{intro}
 A common demonstration of the Meissner effect is to place a a magnet on top of a superconductor above its critical temperature. When the superconductor is cooled to become superconducting, the magnet will start to levitate above the superconductor. 
-This phenomenon can be used to make levitation trains.  Superconductors are also used to create magnetic fields used in magnetic resonance imaging and in high energy physics to accelerate and control the path of particles.\cite{kumar}
+
+The main application of superconductors is in making high field magnets from superconducting wires. They can also be used to make levitation trains or to create magnetic fields used in magnetic resonance imaging and in high energy physics to accelerate and control the path of particles.\cite{kumar} 
 
 Superconductivity has been found to occur in elements, alloys, binary compounds, and other materials.  
 Roughly 70 years after superconductivity was discovered, ceramic materials with critical temperatures above the liquid nitrogen temperature of 77 K were found.\cite{melissinos} 
 These ``high temperature'' superconductors were made up of alternating layers of rare earth atoms and copper and oxygen atoms.\cite{kumar} 
 In our experiment, we look at two high temperature superconductors, $\textrm{Yt}\textrm{Ba}_{2}\textrm{Cu}_{3}\textrm{O}_{7-\delta}$ and $\textrm{Bi}_{2}\textrm{Sr}_{2}\textrm{Ca}_{\textrm{n}-1}\textrm{Cu}_{\textrm{n}}\textrm{O}_{9}$, where $\textrm{n}=1,2,\textrm{ or},3$. %n=3 mainly for colorado superconductor 110 Tc
-The amount of oxygen in $\textrm{Yt}\textrm{Ba}_{2}\textrm{Cu}_{3}\textrm{O}_{7-\delta}$ determines if the material will be superconducting. For $\textrm{Bi}_{2}\textrm{Sr}_{2}\textrm{Ca}_{\textrm{n}-1}\textrm{Cu}_{\textrm{n}}\textrm{O}_{9}$, the critical temperature \textcolor{red}{is depends} on the value of n. \textcolor{magenta}{and these values are ?, according to ? source}. 
+The amount of oxygen in $\textrm{Yt}\textrm{Ba}_{2}\textrm{Cu}_{3}\textrm{O}_{7-\delta}$ determines if the material will be superconducting.\cite{colorado} For $\textrm{Bi}_{2}\textrm{Sr}_{2}\textrm{Ca}_{\textrm{n}-1}\textrm{Cu}_{\textrm{n}}\textrm{O}_{9}$, the critical temperature \textcolor{red}{is depends} on the value of n. \textcolor{magenta}{and these values are ?, according to ? source}. 
 
  
 \section{Aims}
@@ -74,11 +75,12 @@ The amount of oxygen in $\textrm{Yt}\textrm{Ba}_{2}\textrm{Cu}_{3}\textrm{O}_{7-
 \section{Procedure}
 The YBCO and BSCCO superconductors were obtained from Colorado Superconductor Inc. Each superconductor  is contained in a brass casing with three pairs of leads. 
 One pair was for attaching to the current source, another pair was used to measure voltage across the superconductor, and the last pair that of the thermocouple inside the casing. 
-\textcolor{red}{The thermocouple has a resistance that varies with temperature}, so we can determine the  temperature of superconductor by measuring the voltage across the thermocouple. \textcolor{blue}{NOT a resistance measurement! If it were a resistance, it would require the application of a current to generate a voltage drop across it. See http://en.wikipedia.org/wiki/Thermocouple }
-
+The thermocouple produces a voltage when one part of the circuit has a temperature different from a reference point.
 We used different methods to measure the critical temperature of the two superconductors.
 For the YBCO, we connected it to a source with an alternating current of $\pm$1 mA. 
-The voltage across the YBCO sample, $V_{\textrm{YBCO}}$, and the voltage across the thermocouple \textcolor{magenta}{junction}, $V_{T}$ were measured with two nanovoltmeters. \textcolor{blue}{you should explain the point of reversing the current and how this helps more accurately determine the true }$\Delta V$ \textcolor{blue}{ across the sample. You should also explain how you go from voltage drop to resistance, even though it is a simple calculation, or that the instrument does that for you. Include circuit diagrams.} 
+The voltage across the YBCO sample, $V_{\textrm{YBCO}}$, and the voltage across the thermocouple \textcolor{magenta}{junction}, $V_{T}$ were measured with two nanovoltmeters. \textcolor{blue}{you should explain the point of reversing the current and how this helps more accurately determine the true }$\Delta V$
+The voltage across the YBCO sample was converted into a resistance reading by the nanovoltmeter.
+ \textcolor{blue}{Include circuit diagrams.} 
 
 \textcolor{red}{Finally, didn't you do some measurements at other values of current? for example, 10 mA and 100 mA, in addition to 1 mA? YOu were supposed to, and I thought you had. I can't find those results anywhere in your paper. } 
 
@@ -89,7 +91,7 @@ We cooled the YBCO sample by pouring liquid nitrogen into the styrofoam cup. We 
 We used a two-phase lock-in amplifier for the BSCCO experiment. An AC circuit \textcolor{magenta}{set up for the} measurement of resistance \textcolor{magenta}{is also susceptible to (or includes) } contributions from \textcolor{magenta}{parasitic capacitances and inductances between wires and to ground (or capacitors and inductors)}. 
 Although there are no explicit capacitors or inductors in our circuit, they are effectively present due to the electrical cables used \textcolor{magenta}{and construction of the circuit}. 
 The lock-in amplifier allows us to extract the resistance of superconductor from the other contributions because the resistance will be in phase with the \textcolor{red}{signal}, while the contributions of capacitors and inductors will be out of phase. \textcolor{blue}{the in phase component IS your signal. I think you mean that the voltage drop across the sample due to its resistance will be in phase with the applied ac voltage from the oscillator, but of course you can say this more succinctly}. 
-Since the resistance of the BSCCO at room temperature is on the order of m$\Omega$s, we can generate \textcolor{magenta}{an AC current with an RMS amplitude of approximately} $\pm$1 mA in the circuit by connecting the BSCCO in series with a 1 k$\Omega$ resistor, and with a AC voltage source \textcolor{magenta}{with an RMS amplitude} of 1 V. 
+Since the resistance of the BSCCO at room temperature is on the order of m$\Omega$s, we can generate an AC current with an RMS amplitude of approximately $\pm$1 mA in the circuit by connecting the BSCCO in series with a 1 k$\Omega$ resistor, and with a AC voltage source with an RMS amplitude of 1 V. 
 
 
 
@@ -159,6 +161,8 @@ Superconductivity was clearly achieved in both the YBCO and the BSCCO samples, a
 \bibitem{intro} Charles Poole, Horacio Farach, and Richard Creswick, \textit{Superconductivity} (Academic Press, 2007).
 
 \bibitem{kumar} Ajay Kumar Saxena, \textit{High-Temperature Superconductors} (Springer Berlin Heidelberg, 2010).
+
+\bibitem{colo} 
 
 \bibitem{melissinos} Experiments in Modern Physics.  Adrian Constantin Melissinos and Jim Napolitano.  Gulf Professional Publishing, 2003
 
